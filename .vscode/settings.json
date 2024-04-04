@@ -1,0 +1,5 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "NikolaosGeorgiou.html-fmt-vscode"
+    }
+}
