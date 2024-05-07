@@ -27,6 +27,7 @@
 </head>
 
 <style>
+
   h1 {
     text-align: center;
   }
@@ -34,6 +35,12 @@
   table {
     width: 100%;
     border-collapse: collapse;
+  }
+
+  p{
+    padding-top: 20px;
+    padding-left: 19%;
+    padding-right: 19%;
   }
 
   th,
@@ -54,6 +61,31 @@
   tr:hover {
     background-color: #ddd;
   }
+
+@media (max-width: 767px) {
+
+  .scroll-x {
+    width: 96%;
+    overflow-x: auto;
+  }
+
+  p{
+    padding-top: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .insta_box {
+    flex-direction: column;
+  }
+
+  .img-box {
+    flex: 0 0 100%; /* Display images in full width */
+    margin-right: 0; /* Remove margin between images */
+    margin-bottom: 10000px; /* Add margin between rows */
+  }
+}
+
 </style>
 
 <body>
@@ -96,8 +128,13 @@
   <!-- end header section -->
   
   <section class="about_section  layout_padding">
-    <div class="container">
-      <h1>TAREAS</h1><br>
+
+    <h1>TAREAS</h1><br>
+
+    <p>A continuación, se detalla cada tarea con una breve descripción y el recurso humano necesario para su realización:</p>
+
+    <div class="container scroll-x">
+
 
       <table>
         <thead>
@@ -219,9 +256,11 @@
       </table>
       <br>
 
-      <p>Cada tarea ha sido asignada a un recurso humano específico, asegurando que las habilidades y experiencias de
-        cada miembro del equipo se utilicen de manera efectiva para el éxito del proyecto.</p>
+     
     </div>
+
+    <p>Cada tarea ha sido asignada a un recurso humano específico, asegurando que las habilidades y experiencias de
+      cada miembro del equipo se utilicen de manera efectiva para el éxito del proyecto.</p>
   </section>
   <!-- end section -->
 
@@ -248,7 +287,10 @@
           </div>
         </div>
 
+
+
         <div class="col-md-6 col-lg-3">
+
           <div class="info_insta">
             <h4>
               Instagram
@@ -332,20 +374,6 @@
       </div>
     </div>
   </section>
-  <!-- end info_section -->
-
-
-  <!-- footer section 
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> Todos los derechos reservados por
-        <a href="https://html.design/">plantillas HTML gratuitas.</a>
-      </p>
-    </div>
-  </footer>-->
-  <!-- footer section -->
-
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
