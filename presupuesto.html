@@ -65,26 +65,58 @@
   </header>
   <!-- end header section -->
 
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-  </style>
+
+<style>
+
+  h1 {
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+
+  th,
+  td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+@media (max-width: 767px) {
+
+  .scroll-x {
+    width: 96%;
+    overflow-x: auto;
+  }
+
+
+}
+
+</style>
 
   <!-- Quiénes somos nosotros section -->
   <section class="about_section  layout_padding">
-    <div class="container">
+    <div class="container scroll-x">
 
-      <p  style="font-size: 18px;">Aquí tienes un presupuesto basado en las tareas y recursos humanos detallados en el texto:</p>
+      <h1>PRESUPUESTO</h1><br>
+
+    <p style="font-size: 18px;">Aquí tienes un presupuesto basado en las tareas y recursos humanos detallados en el texto:</p>
+
       
       <table>
         <thead>
